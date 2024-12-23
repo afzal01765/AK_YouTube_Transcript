@@ -1,5 +1,7 @@
 from flask import Flask, request, jsonify
 from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled, VideoUnavailable, NoTranscriptFound
+#For test Url 
+#  http://127.0.0.1:5000/api/youtube-to-text?video_id=dQw4w9WgXcQ
 
 app = Flask(__name__)
 
