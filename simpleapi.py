@@ -21,7 +21,7 @@ def youtube_to_text():
 
     except TranscriptsDisabled:
         return jsonify({"error": "Transcripts are disabled for this video."}), 403
-    except VideoUnavailable:ac
+    except VideoUnavailable:
         return jsonify({"error": "The requested video is unavailable or does not exist."}), 404
     except NoTranscriptFound:
         return jsonify({"error": "No transcript found for this video."}), 404
